@@ -105,7 +105,7 @@ foreach ($metro as $lineName => $line) {
 		if (isset($station['photos'])) {
 			echo '<tr>';
 			foreach ($station['photos'] as $photoUrl) {
-				echo '<p><td class="ph"><img class="metro-photo" src="' . $photoUrl  . '" /></td><p>';
+				echo '<p><td class="ph"><img class="metro-photo" src="' . htmlspecialchars($photoUrl)  . '" /></td><p>';
 			}
 			echo '</table>';
 			echo '</tr>';
